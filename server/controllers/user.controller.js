@@ -38,6 +38,7 @@ userCtrl.editUser = async (req, res) => {
 }
 
 userCtrl.deleteUser = async (req, res) => {
+    console.log('servidor ', req.params.id);
     await User.findByIdAndRemove(req.params.id);
     res.json({ status: 'User deleted'});
 }

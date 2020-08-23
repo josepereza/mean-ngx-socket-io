@@ -9,7 +9,7 @@ const cors = require('cors');
 
 const { mongoose } = require('./database');
 
-
+app.set('port', '3000')
 
 //Middlewares 
 app.use(express.json());
@@ -20,7 +20,7 @@ app.use(cors({origin: true, credentials: true}
 app.use('/api/users' ,require('./routes/user.routes'));
 
 //Starting the server
-app.listen(3000, () => {
-    console.log('Server on port', ' 3000');
+app.listen(app.get('port'), () => {
+    console.log('Server on port', app.get('port'));
 });
 module.exports = app;

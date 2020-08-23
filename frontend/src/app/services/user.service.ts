@@ -28,6 +28,7 @@ export class UserService {
   }
 
   deleteUser(_id: string) {
+    console.log(_id);
     return this.http.delete(this.URL_API + `/${_id}`);
   }
 }
