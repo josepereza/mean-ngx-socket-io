@@ -2,7 +2,7 @@
 MEAN con angular 10 , mongodb, nodejs, con realtime  y  ngx-socket-io
 
 * https://www.npmjs.com/package/ngx-socket-io
-* el codigo de abajo de ha insertado,dentro del server,  en user.routes.js  pero tambien lo podemos insertar en el index.js:
+* el codigo de abajo se ha insertado, dentro del server,  en user.routes.js  pero tambien lo podemos insertar en el index.js:
 ```
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
